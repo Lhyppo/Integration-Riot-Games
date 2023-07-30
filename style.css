@@ -12,19 +12,19 @@ body {
 
 .icon>svg {
     fill: currentColor;
-    width: 2.2em;
-    height: 2.2em;
-    padding: 0.8em 0.8em 0.35em 0.8em;
+    width: 2.1em;
+    height: 2.1em;
+    padding: 1em 0.85em 0.45em 0.85em;
 }
 
 .icon {
-    margin: 2.35em;
+    margin: 2.35em 2.15em;
     position: fixed;
     z-index: 100;
     border-radius: 1.3em;
-    color: rgb(150, 150, 150);
-    background: rgb(40, 40, 40);
-    box-shadow: 0 0 1em rgba(17, 17, 17, 0.8);
+    color: rgb(155, 155, 155);
+    background: rgb(38, 38, 38);
+    box-shadow: 0 0 0.5em rgba(17, 17, 17, 0.8);
 }
 
 .icon:hover {
@@ -53,6 +53,7 @@ body {
     width: 100%;
     background: rgb(28, 28, 28);
     color: rgb(231, 230, 230);
+    padding-bottom: 2em;
 }
 
 h2 {
@@ -62,20 +63,44 @@ h2 {
     line-height: 0.75em;
 }
 
-.grid {
+.section-content {
     padding: 0 7.5em 6em 7.5em;
+    color: rgb(231, 230, 230);
+}
+
+.section-content {
+    padding-bottom: 3em !important;
+    color: rgb(231, 230, 230);
+}
+
+.section-content-2>h2 {
+    padding-top: 3em;
 }
 
 .grid-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 2em;
+    column-gap: 40px;
+    row-gap: 2em;
+    justify-content: start;
+}
+
+.grid-content-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    row-gap: 2em;
     justify-content: start;
 }
 
 .grid-links {
     width: 24.3em;
     height: 16em;
+}
+
+.grid-links-2 {
+    width: 32em;
+    height: 21em;
 }
 
 .grid-image {
@@ -134,4 +159,76 @@ button:hover {
 a {
     cursor: default;
     width: 24em;
+}
+
+#events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: 1em;
+}
+
+#item-1 {
+    grid-column: 1 / 3;
+    height: 42.5em;
+}
+
+#title-convergence {
+    grid-row: 3;
+    grid-column: 1;
+    padding: 0 0.4em 0.2em 0.4em !important;
+    line-height: 1.1em;
+}
+
+#informations {
+    grid-row: 4;
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1em;
+}
+
+#informations>span {
+    font-size: 1.47em;
+    line-height: 1.3em;
+    color: rgb(180, 180, 180);
+}
+
+#informations>div {
+    padding: 0.2em 0 0 1.5em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    height: 2em;
+    column-gap: 3em;
+}
+
+#purchase {
+    color: rgb(243, 243, 243);
+    border-radius: 2.4em;
+    background: rgb(230, 0, 98);
+    align-items: center;
+    justify-content: center;
+    width: 27em;
+}
+
+#purchase>p {
+    font-size: 1.8em;
+    font-weight: bolder;
+    font-family: 'Outfit', sans-serif;
+}
+
+#learn {
+    width: 30em;
+    color: rgb(243, 243, 243);
+    border-radius: 2.4em;
+    background: rgb(41, 39, 39);
+    align-items: center;
+    justify-content: center;
+}
+
+#learn>p {
+    font-size: 1.8em;
+    font-weight: bolder;
+    font-family: 'Outfit', sans-serif;
 }
