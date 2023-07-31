@@ -5,6 +5,11 @@ body {
     background-color: rgb(20, 18, 18);
 }
 
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(190, 190, 190) rgb(75, 73, 73);
+}
+
 .header {
     background: rgb(28, 28, 28);
     padding-bottom: 3em;
@@ -68,7 +73,7 @@ h2 {
     color: rgb(231, 230, 230);
 }
 
-.section-content {
+.section-content-2 {
     padding-bottom: 3em !important;
     color: rgb(231, 230, 230);
 }
@@ -101,6 +106,7 @@ h2 {
 .grid-links-2 {
     width: 32em;
     height: 21em;
+    position: relative;
 }
 
 .grid-image {
@@ -108,6 +114,7 @@ h2 {
     height: 100%;
     border-radius: 0.6em;
     box-shadow: 0em 0em 0.5em rgba(17, 17, 17, 0.8);
+    transition: box-shadow 0.5s ease-out;
 }
 
 .grid-image>img {
@@ -231,4 +238,140 @@ a {
     font-size: 1.8em;
     font-weight: bolder;
     font-family: 'Outfit', sans-serif;
+}
+
+.installed {
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+    width: 100%;
+    height: 3.5em;
+    text-decoration: none;
+    color: rgb(20, 18, 18);
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, rgb(43, 143, 196), rgb(14, 192, 224));
+}
+
+.convergence-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6em;
+    box-shadow: 0em 0em 0.5em rgba(17, 17, 17, 0.8);
+    transition: box-shadow 0.5s ease-out;
+}
+
+.convergence-image>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6em;
+    position: relative;
+}
+
+#purchase:hover {
+    background: rgb(190, 0, 82);
+}
+
+#purchase:active {
+    background: rgb(150, 0, 65);
+}
+
+#learn:hover {
+    background: rgb(33, 30, 31);
+}
+
+#learn:active {
+    background: rgb(20, 18, 18);
+}
+
+.riot-games:hover .blue-shadow img{
+    animation-duration: 0.5s;
+    animation-name: blue-shadow;
+    animation-fill-mode: forwards;
+}
+
+.riot-games:hover .yellow-shadow img{
+    animation-duration: 0.5s;
+    animation-name: yellow-shadow;
+    animation-fill-mode: forwards;
+}
+
+.riot-games:hover .pink-shadow>img {
+    animation-duration: 0.5s;
+    animation-name: pink-shadow;
+    animation-fill-mode: forwards;
+}
+
+.riot-games:hover .dark-yellow-shadow>img{
+    animation-duration: 0.5s;
+    animation-name: dark-yellow-shadow;
+    animation-fill-mode: forwards;
+}
+
+.riot-games:hover div.grid-links,
+.riot-games:hover div.grid-links-2,
+.grid-links:hover,
+.grid-links-2:hover {
+    animation-duration: 0.3s;
+    animation-name: scale;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blue-shadow {
+    from {
+        box-shadow: 0 1em 0 rgb(0, 255, 255);
+    }
+    30% {
+        box-shadow: 0 1em 4.5em rgb(0, 255, 255);
+    }
+    to {
+        box-shadow: 0 1em 4em rgba(0, 255, 255, 0.3);
+    }
+}
+
+@keyframes yellow-shadow {
+    from {
+        box-shadow: 0 1em 0 rgb(255, 230, 0);
+    }
+    30% {
+        box-shadow: 0 1em 4.5em rgb(255, 230, 0);
+    }
+    to {
+        box-shadow: 0 1em 4em rgba(255, 230, 0, 0.3);
+    }
+}
+
+@keyframes pink-shadow {
+    from {
+        box-shadow: 0 1em 0 rgb(255, 80, 118);
+    }
+    30% {
+        box-shadow: 0 1em 4.5em rgb(255, 80, 118);
+    }
+    to {
+        box-shadow: 0 1em 4em rgba(255, 80, 118, 0.3);
+    }
+}
+
+@keyframes dark-yellow-shadow {
+    from {
+        box-shadow: 0 1em 0 rgb(182, 153, 57);
+    }
+    30% {
+        box-shadow: 0 1em 4.5em rgb(182, 153, 57);
+    }
+    to {
+        box-shadow: 0 1em 4em rgba(182, 153, 57, 0.3);
+    }
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.02);
+    }
+    to {
+        transform: scale(1);
+    }
 }
