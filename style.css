@@ -28,7 +28,7 @@ body {
     z-index: 100;
     border-radius: 1.3em;
     color: rgb(155, 155, 155);
-    background: rgb(38, 38, 38);
+    background: rgba(50, 50, 50, 0.45);
     box-shadow: 0 0 0.5em rgba(17, 17, 17, 0.8);
 }
 
@@ -79,7 +79,7 @@ h2 {
 }
 
 .section-content-2>h2 {
-    padding-top: 3em;
+    padding-top: 4em;
 }
 
 .grid-content {
@@ -93,7 +93,7 @@ h2 {
 .grid-content-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 5px;
+    column-gap: 2.5em;
     row-gap: 2em;
     justify-content: start;
 }
@@ -104,15 +104,16 @@ h2 {
 }
 
 .grid-links-2 {
-    width: 32em;
-    height: 21em;
+    width: 33em;
+    height: 22em;
     position: relative;
+    border-radius: 0.75em;
 }
 
 .grid-image {
     width: 100%;
     height: 100%;
-    border-radius: 0.6em;
+    border-radius: 0.75em;
     box-shadow: 0em 0em 0.5em rgba(17, 17, 17, 0.8);
     transition: box-shadow 0.5s ease-out;
 }
@@ -120,7 +121,7 @@ h2 {
 .grid-image>img {
     width: 100%;
     height: 100%;
-    border-radius: 0.6em;
+    border-radius: 0.75em;
     position: relative;
 }
 
@@ -131,6 +132,7 @@ h2 {
 .game-title {
     display: inline-block;
     margin: 1em 0 1em 0.3em;
+    position: static;
 }
 
 .game-title>button>p {
@@ -165,7 +167,6 @@ button:hover {
 
 a {
     cursor: default;
-    width: 24em;
 }
 
 #events {
@@ -241,8 +242,8 @@ a {
 }
 
 .installed {
-    border-bottom-left-radius: 0.6em;
-    border-bottom-right-radius: 0.6em;
+    border-bottom-left-radius: 0.75em;
+    border-bottom-right-radius: 0.75em;
     width: 100%;
     height: 3.5em;
     text-decoration: none;
@@ -272,7 +273,7 @@ a {
     width: 100%;
     height: 100%;
     z-index: 5;
-    border-radius: 0.6em;
+    border-radius: 0.75em;
     background: rgba(17, 17, 17, 0.4);
 }
 
@@ -284,7 +285,7 @@ a {
 .convergence-image {
     width: 100%;
     height: 100%;
-    border-radius: 0.6em;
+    border-radius: 0.8em;
     box-shadow: 0em 0em 0.5em rgba(17, 17, 17, 0.8);
     transition: box-shadow 0.5s ease-out;
 }
@@ -292,7 +293,7 @@ a {
 .convergence-image>img {
     width: 100%;
     height: 100%;
-    border-radius: 0.6em;
+    border-radius: 0.75em;
     position: relative;
 }
 
@@ -343,6 +344,20 @@ a {
     animation-duration: 0.3s;
     animation-name: scale;
     animation-fill-mode: forwards;
+}
+
+.riot-games:hover .grid-links-2>.grid-image,
+.riot-games:hover .grid-links>.grid-image {
+    border: 0.35em solid rgb(139, 139, 139);
+    padding: 0.35em;
+    border-radius: 1.3em;
+    margin-left: -0.7em;
+    margin-top: -0.7em;
+}
+
+.riot-games:hover .grid-links-2,
+.riot-games:hover .grid-links {
+    margin-bottom: 0.7em;
 }
 
 @keyframes blue-shadow {
